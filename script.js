@@ -1,5 +1,5 @@
-const contenantChoixOrdinateur = document.getElementById('choix-ordinateur');
-const contenantChoixUtilisateur = document.getElementById('choix-utilisateur');
+const contenantChoixOrdinateur = document.getElementById('ordinateur');
+const contenantChoixUtilisateur = document.getElementById('utilisateur');
 const contenantResultat = document.getElementById('resultat');
 
 const choixPossibles = document.querySelectorAll('button');
