@@ -35,12 +35,12 @@ function generer_choix_ordinateur(){
 }
 
 function verification(){
-    if(ChoixUtilisateur == ChoixOrdinateur){
+if(ChoixUtilisateur == ChoixOrdinateur){
         Resultat = "Egalité !";
     }//Le cas ou ça gagne 
     if(ChoixUtilisateur == "Papier" && ChoixOrdinateur == "Pierre"){
         Resultat = "Gagné !";
-    }    
+    }        
     if(ChoixUtilisateur == "Ciseaux" && ChoixOrdinateur == "Papier"){
         Resultat = "Gagné !";
     }        
@@ -50,12 +50,11 @@ function verification(){
     if(ChoixUtilisateur == "Pierre" && ChoixOrdinateur == "Papier"){
         Resultat= "Perdu !";
     }        
-    if(ChoixUtilisateur == "Ciseaux" && ChoixOrdinateur == "Papier"){
+    if(ChoixUtilisateur == "Papier" && ChoixOrdinateur == "Ciseaux"){
         Resultat= "Perdu !";
     }        
-    if(ChoixUtilisateur == "Papier" && ChoixOrdinateur == "Pierre"){
-        Resultat= "Perdu !";
-        
-    }        
+    if(ChoixUtilisateur == "Ciseaux" && ChoixOrdinateur == "Pierre"){
+        Resultat = "Perdu !";
+    }       
     contenantResultat.innerHTML = Resultat;
 }
